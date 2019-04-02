@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>MyPersonalCipher</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+
+<body>
+  <a  id ="glitter" href="http://www.gigaglitters.com/es/"><img src="http://www.gigaglitters.com/es/creados/RWXLnmFRTV.gif"
+    width="392" height="93" border="0" alt="http://www.rasaint.net/ - Glitter Graphics"></a><br><a
+  href="http://www.gigaglitters.com/es/"></a>
+  <div id="firstScreen">
+    <h1>¡Bienvenidos!</h1>
+    <p>Hola! Esta aplicación te será de utilidad para cifrar o descifrar cada una de las experiencias que desees
+      conservar de forma anónima</p>
+  </div>
+  <div id="secondScreen">
+    <h1>Cifrar mensaje</h1>
+    <i> Coloca el número de espacios que deseas codificar</i>
+    <input type="number" name="off" id="offSet" min="1" placeholder="Elige el n° secreto">
+  </div>
+  <div id="ciph_deciph">
+    <i id="instruccion"> Coloca el mensaje que deseas codificar/ decodificar </i>
+    <!-- <input type="text" name="msj" id="mssj" autocomplete="off" placeholder="Escribe tu mensaje a cifrar/descifrar">-->
+    <textarea name="msj" id="mssj" autocomplete="off" placeholder="Escribe tu mensaje a cifrar/descifrar"></textarea>
+  </div>
+  <div id="buttons">
+    <button id="ciPher"> Cifrar </button>
+    <button id="deciPher"> Descifrar </button>
+  </div>
+  <div id="resultaos">
+    <textarea id="result">Tu resultado es: </textarea>
+  </div>
+  <script src="index.js"></script>
+  <script src="cipher.js"></script>
+</body>
+
 </html>
