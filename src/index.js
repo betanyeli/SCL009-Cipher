@@ -1,5 +1,5 @@
 window.onload = () => {
-  // debugger;
+
   let btn_cipher = document.getElementById("ciph"); //declarar la variable del botón y llamarlo.
   btn_cipher.addEventListener("click", () => {  //Función del botón click
     let offsetCipher = document.getElementById("desplazamiento").value; //Declarar el valor del offset.
@@ -17,5 +17,10 @@ window.onload = () => {
     document.getElementById("result").innerHTML = 'Tu texto es:' + result_cipher; //resultado descifrado
 
   })
-
 }
+let btn_borrar = document.getElementById("borrar"); // declarar función del botón y llamarlo.
+btn_borrar.addEventListener("click", () => {
+document.getElementById("desplazamiento").value= "";
+document.getElementById("mssj").value= "";
+document.getElementById("result").value= "";
+})

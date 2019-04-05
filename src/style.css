@@ -1,34 +1,42 @@
 #head{
-  font-family: 'Indie Flower', cursive;
-  background-color: rgb(221, 101, 119)
+  font-family: 'Cuprum', sans-serif;
+ 
   }
-#firstscreen{
-  font-family: 'Indie Flower', cursive;
+  #body{
+    font-family: 'Cuprum', sans-serif;
+  }
+
+#todo{
+  font-family: 'Cuprum', sans-serif;
+
 }
-#secondscreen{
-  font-family: 'Indie Flower', cursive;
-}
+
 #offSet{
-  font-family: 'Indie Flower', cursive;
-}
-#ciph_deciph{
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Cuprum', sans-serif;
+  background: transparent;
+
 }
 #mssj{
-  font-family: 'Indie Flower', cursive;
- 
+  font-family: 'Cuprum', sans-serif;
+  height: 10em;
+  width: 500px;
+  background: transparent;
+
 }
 #ciPher{
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Cuprum', sans-serif;
  
 }
 #deciPher{
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Cuprum', sans-serif;
 
 }
 #resultaos{
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Cuprum', sans-serif;
 }
 #result{
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Cuprum', sans-serif;
+  height: 10em;
+   width: 500px;
+   background: transparent;
 }

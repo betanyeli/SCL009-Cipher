@@ -3,35 +3,36 @@
 
 <head>
   <meta charset="utf-8">
-  <title>MyPersonalCipher</title>
+  <title>CipherLabs</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
 </head>
-
 <body>
-  <a  id ="glitter" href="http://www.gigaglitters.com/es/"><img src="http://www.gigaglitters.com/es/creados/RWXLnmFRTV.gif"
-    width="392" height="93" border="0" alt="http://www.rasaint.net/ - Glitter Graphics"></a><br><a
-  href="http://www.gigaglitters.com/es/"></a>
-  <div id="firstscreen">
+  <header align="center">
+    <image src="casanova.PNG" height="187" width="505"></image>
+  </header>
+<section align="center" id= "todo">
+      <div id="firstscreen">
     <h1>¡Bienvenidos!</h1>
-    <p>Hola! Esta aplicación te será de utilidad para cifrar o descifrar cada una de las experiencias que desees
-      conservar de forma anónima</p>
+    <p>Esta aplicación te será de utilidad para cifrar o descifrar tus resultados</p>
   </div>
   <div id="secondscreen">
-    <h1>Cifrar mensaje</h1>
-    <i> Coloca el número de espacios que deseas codificar</i>
-    <input type="number" name="off" id="desplazamiento" min="1">
-  </div>
+    <h1>Cifrar o descifra tu mensaje</h1>
+    <i>N° de offset</i><br>
+    <input type="number" name="off" id="desplazamiento" min="1" max="50">
+  </div><br>
   <div id="ciph_deciph">
-    <i id="instruccion"> Coloca el mensaje que deseas codificar/ decodificar </i>
+    <!-- ><i id="instruccion"> Coloca el mensaje que deseas codificar/ decodificar </i>-->
     <!-- <input type="text" name="msj" id="mssj" autocomplete="off" placeholder="Escribe tu mensaje a cifrar/descifrar">-->
-    <textarea name="msj" id="mssj" autocomplete="off" placeholder="Escribe tu mensaje a cifrar/descifrar"></textarea>
+    <textarea name="msj" id="mssj" autocomplete="off" placeholder="Escribe tu mensaje a cifrar/descifrar"></textarea><br>
     <button id="ciph"> Cifrar </button>
     <button id="deciph"> Descifrar </button>
-  </div>
+  </div><br>
   <div id="resultaos">
-    <textarea id="result">Tu resultado es: </textarea>
+    <textarea id="result">Tu resultado es: </textarea><br>
+    <button id="borrar"> Limpiar </button>
   </div>
+</section>
   <script src="index.js"></script>
   <script src="cipher.js"></script>
 </body>
