@@ -1,35 +1,43 @@
 window.cipher = {
   encode: (text, offset) => { // texto y desplazamiento
-    //console.log(text, offset);
     let msj = ""; // declarar el nombre de la función para que guarde el texto, por el momento vacío.
     for (let index = 0; index < text.length; index++) { // Inicio del bucle que pasará por cada dato del texto.
-      let textUpperCase = text.toUpperCase(index); // Pasar a mayúscula los datos ya iterados en el bucle anterior.
-      if (textUpperCase.charCodeAt(index) === 32) { // si la iteración encuentra un space sera true y si es así, lo imprima.
+      let textToAscii = text.charCodeAt(index); //obtener codigo ascii
+      if (textToAscii >= 65 && textToAscii <= 90) { //condicion con los límites de mayúsculas
+        let asciiMayuscula = (textToAscii - 65 + parseInt(offset)) % 26 + 65; // formula cipher
+        let asciiLetterMayuscula = String.fromCharCode(asciiMayuscula); //Pasar a letras normales
+        msj += asciiLetterMayuscula; //Concatena el mensaje
+      }
+      else if (textToAscii >= 97 && textToAscii <= 122) { //condicion con los límites de minusculas
+        let asciiMinuscula = (textToAscii - 97 + parseInt(offset)) % 26 + 97; // formula cipher
+        let asciiLetterMinuscula = String.fromCharCode(asciiMinuscula); //Pasar a letras normales
+        msj += asciiLetterMinuscula; //Concatena el mensake
+      }
+      else if (text.charCodeAt(index) === 32) { // si la iteración encuentra un space sera true y si es así, lo imprima.
         msj += " ";
-      } else {
-        let txt_to_ascii = (textUpperCase.charCodeAt(index) - 65 + parseInt(offset)) % 26 + 65; // Función Cipher Solo Mayúsculas
-        msj += String.fromCharCode(txt_to_ascii); // Cifrado de ascii a letras.
-
       }
 
-
     }
-    return msj;
-  },
-  decode: (text, offset) => {
-    //console.log(text, offset);
-    let msj = ""; // declarar el nombre de la función para que guarde el texto, por el momento vacío.
-    for (let index = 0; index < text.length; index++) {// Inicio del bucle que pasará por cada dato del texto.
-      let textUpperCase = text.toUpperCase(index); // Pasar a mayúsculas los datos iterados del bucle anterior.
-      if (textUpperCase.charCodeAt(index) === 32) { // si la iteración encuentra un space sera true y si es así, lo imprima.
-        msj += " ";
-      } else {
-        let txt_to_ascii = (textUpperCase.charCodeAt(index) + 65 - parseInt(offset)) % 26 + 65; // Función cipher pero descifrando. cambie -- a +-
-        msj += String.fromCharCode(txt_to_ascii); // Cifrado de ascii a letras
-      }
-
-
+  return msj; //retorna el mensaje
+},
+decode: (text, offset) => { // texto y desplazamiento
+  let msj = ""; // declarar el nombre de la función para que guarde el texto, por el momento vacío.
+  for (let index = 0; index < text.length; index++) { // Inicio del bucle que pasará por cada dato del texto.
+    let textToAscii = text.charCodeAt(index); //obtener codigo ascii
+    if (textToAscii >= 65 && textToAscii <= 90) { //condicion con los límites de mayúsculas
+      let asciiMayuscula = (textToAscii + 65 - parseInt(offset)) % 26 + 65; // formula decipher
+      let asciiLetterMayuscula = String.fromCharCode(asciiMayuscula); //Pasar a letras normales
+      msj += asciiLetterMayuscula; //concateno el mensaje
     }
-    return msj;
+    else if (textToAscii >= 97 && textToAscii <= 122) { //condicion con los límites de minusculas
+      let asciiMinuscula = (textToAscii - 122 - parseInt(offset)) % 26 + 122; // formula decode
+      let asciiLetterMinuscula = String.fromCharCode(asciiMinuscula); //Pasar a letras normales
+      msj += asciiLetterMinuscula; //concateno el mensaje
+    }
+    else if (text.charCodeAt(index) === 32) { // si la iteración encuentra un space sera true y si es así, lo imprima.
+      msj += " ";
+    }
+
   }
-}
+ return msj;
+} }
