@@ -1,5 +1,6 @@
 window.onload = () => {
-
+ 
+  //----------------CIFRADO
   let btn_cipher = document.getElementById("ciph"); //declarar la variable del botón y llamarlo.
   btn_cipher.addEventListener("click", () => {  //Función del botón click
     let offsetCipher = document.getElementById("desplazamiento").value; //Declarar el valor del offset.

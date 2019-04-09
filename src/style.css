@@ -7,8 +7,7 @@ img{
   filter: alpha(opacity=50);
 }
 body{
-    background-image: url('./dna.png');
-    font-family: 'Cuprum', sans-serif;
+    background-image: url('./casa.jpeg');
   }
 
 #todo{
@@ -20,20 +19,23 @@ body{
 #offSet{
   font-family: 'Cuprum', sans-serif;
   background: transparent;
+  border: 2px solid slateblue;
+	border-radius: 10px;
 
 }
 #mssj{
   font-family: 'Cuprum', sans-serif;
   height: 10em;
   width: 500px;
+  border: 2px solid slateblue;
+	border-radius: 10px;
   background: transparent;
-}
-#resultaos{
-  font-family: 'Cuprum', sans-serif;
 }
 #result{
   font-family: 'Cuprum', sans-serif;
   height: 10em;
    width: 500px;
+   border: 2px solid slateblue;
+	border-radius: 10px;
    background: transparent;
 }

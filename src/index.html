@@ -16,24 +16,27 @@
   </header>
 <section align="center" id= "todo">
       <div id="firstscreen">
-    <h1>¡Bienvenidos!</h1>
-    <p>Esta aplicación te será de utilidad para cifrar o descifrar tus resultados</p>
+    <h1>Bienvenido</h1>
+    <p align="justify">Esta aplicación te será de utilidad para encriptar/desencriptar tus resultados, basada en el método de Cifrado Cesar, sólo tienes que colocar el número de desplazamientos que deseas que se mueva cada letra, colocar el mensaje y ya tendrás la codificación lista. Tu privacidad es importante para CasanovaLabs</p>
+
   </div>
   <div id="secondscreen">
     <h1>Cifrar o descifra tu mensaje</h1>
-    <i>N° de offset</i><br>
+    <i>N° de desplazamientos</i><br>
     <input type="number" name="off" id="desplazamiento" min="1" max="50" required>
   </div><br>
   <div id="ciph_deciph">
     <textarea name="msj" id="mssj" autocomplete="off" placeholder="Escribe tu mensaje a cifrar/descifrar"></textarea><br>
-    <button id="ciph"> Cifrar </button>
-    <button id="deciph"> Descifrar </button>
+    <button type="button" id="ciph" class="btn btn-primary"> Cifrar </button>
+    <button type="button" id="deciph" class="btn btn-primary"> Descifrar </button>
   </div><br>
   <div id="resultaos">
     <textarea id="result">Tu resultado es: </textarea><br>
-    <button id="borrar"> Limpiar </button>
+    <button type="button" id="borrar" class="btn btn-primary"> Limpiar </button>
   </div>
 </section>
+<footer> Copyright © CasanovaLabs 2019 - Designed By Ang Bet.
+  </footer>
   <script src="index.js"></script>
   <script src="cipher.js"></script>
 </body>
