@@ -7,26 +7,26 @@ Definida la temática y después de realizar el flujo y prototipo de baja fideli
 ## **Casanova Labs.** :microscope:
 Los avances en las ciencias médicas avanzan de forma vertiginosa ya que van de la mano con el auge de las nuevas tecnologías que día a día van desarrollándose conforme a las nuevas necesidades del usuario. Por este motivo es necesario ir adaptándose al ritmo de estos acontecimientos, ejemplo de esto, pudiera mencionarse como la simplificación de trámites en centros de salud, digitalización de documentos, entrega de informes, diagnósticos y resultados de forma remota, entre otros. Uno de los aspectos fundamentales de este avance, es el área de seguridad informática, ya que prevalece la protección de datos de usuarios y profesionales de la salud, de modo que no sea expuesta su privacidad. 
 
-En este sentido, respondiendo a dichas necesidades, se planteó la creación de “Casanova Labs”, aplicación orientada al cifrado y posterior descifrado de información de carácter médico, tales como informes de diagnóstico, resultados, o cualquier tipo de dato generado en la relación médico-paciente, los cuales serían nuestros principales usuarios.  La aplicación se realizó con una interfaz básica de modo que facilite su uso, tomando en cuenta que los objetivos principales del usuario es la protección de sus datos.
-Consideramos que “Casanova Labs” es un producto que tiene potencial, acorde al uso que le entreguen los usuarios, sus sugerencias serán tomadas en cuenta para seguir desarrollando esta aplicación.
+En este sentido, respondiendo a dichas necesidades, se planteó la creación de **“Casanova Labs”**, aplicación orientada al cifrado y posterior descifrado de información de carácter médico, tales como informes de diagnóstico, resultados, o cualquier tipo de dato generado en la relación médico-paciente, los cuales serían nuestros principales usuarios.  La aplicación se realizó con una interfaz básica de modo que facilite su uso, tomando en cuenta que los objetivos principales del usuario es la protección de sus datos.
+Consideramos que **“Casanova Labs”** es un producto que tiene potencial, acorde al uso que le entreguen los usuarios, sus sugerencias serán tomadas en cuenta para seguir desarrollando esta aplicación.
 
 ## **A continuación, se explicará de forma detallada en qué consiste la aplicación.**
 
-“Casanova Labs” es un aplicación orientada al cifrado y descifrado de información de carácter clínico que se genere entre profesionales y pacientes. El método de encriptado utilizado es el “Cifrado César”, el cual está basado en reasignar a cada letra del abecedario otra nueva resultante de desplazar éste un determinado número de lugares.
+**“Casanova Labs”** es un aplicación orientada al cifrado y descifrado de información de carácter clínico que se genere entre profesionales y pacientes. El método de encriptado utilizado es el *“Cifrado César”*, el cual está basado en reasignar a cada letra del abecedario otra nueva resultante de desplazar éste un determinado número de lugares.
 De esta manera, para encriptar o desencriptar un mensaje cualquiera, simplemente hay que cambiar los caracteres de uno por los del otro. Cuando se tiene un texto encriptado con un cifrado César y se conoce la clave de cifrado, desencriptarlo es bastante sencillo; sin embargo, cuando no se conoce dicha clave, se debe probar con los reordenamientos posibles hasta encontrar un mensaje con sentido. Dicho esto es muy necesario asignarle una clave de desplazamiento antes de cifrar el mensaje, y proporcionar dicha clave a quien queramos enviar el mensaje a cifrar o descifrar.
 
 ### **¿Cómo funciona?**
-Veamos la interfaz principal de la página final.
+Veamos la interfaz principal de la página final, puedes acceder a la aplicación desde [Aquí](https://betanyeli.github.io/SCL009-Cipher/src/index.html)
  
 ![Casanova Labs](https://i.ibb.co/hdtTySy/casanova.png)
 
-Como se puede visualizar, la interfaz se realizó de forma amigable con el usuario, tomando en cuenta cada una de las consideraciones que nos expusieron en los test de usabilidad, quedando su funcionalidad de la siguiente forma.
+Como se puede visualizar, la interfaz se realizó de forma amigable con el usuario, tomando en cuenta cada una de las consideraciones que nos expusieron en los test de usabilidad, quedando su funcionalidad de la siguiente forma:
 
-•	Elegir un n° de desplazamientos. :key:
+•	Elige un n° de desplazamientos. :key:
 
-•	Colocar el mensaje a cifrar / descifrar. :pencil:
+•	Coloca el mensaje a cifrar / descifrar. :pencil:
 
-•	Cifrar / Descifrar. :unlock: :lock:
+•	Cifra / Descifra. :unlock: :lock:
 
 •	El resultado quedaría listo para exportar, o limpiar según lo que requiera el usuario. :e-mail:
 
