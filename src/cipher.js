@@ -18,6 +18,10 @@ window.cipher = {
         let asciiNumberNormal = String.fromCharCode(asciiNumber); //Pasar a letras normales
         msj += asciiNumberNormal; //Concatena el mensake 
       }
+      /*else if (parseInt(offset)<0) {
+        offset+=cipher.decode(text, offset);
+    
+      } //offset negativo */
  else {
         msj += text[index]; // si encuentra un caracter no definido en límites, dejar igualito.
       }
@@ -43,7 +47,10 @@ window.cipher = {
         let asciiNumberNormal = String.fromCharCode(asciiNumber); //Pasar a letras normales
         msj += asciiNumberNormal; //Concatena el mensake 
       }
-
+      /*else if (parseInt(offset)<0) {
+        offset+=cipher.encode(text, offset);
+    
+      } probar offset negativo*/ 
     else {
         msj += text[index]; // si encuentra un caracter no definido en límites, dejar igualito.
       }

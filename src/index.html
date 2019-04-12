@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-  <meta charset="utf-8">
+  <meta name "viewport" charset="utf-8" content="width=device-width, initial-scale=1,
+  maximum-scale=1">
   <title>CasanovaLabs</title>
   
   <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
@@ -11,31 +12,37 @@
 
 </head>
 <body>
-  <header align="center">
-    <image id="casanova" src="casanova.PNG" height="187" width="505"></image>
+  <header>
+    <img id="logo" src="./img/daniu.PNG"></img>
   </header>
-<section align="center" id= "todo">
-      <div id="firstscreen">
+<section  id= "all_divs">
+      <div id="first_screen">
     <h1>Bienvenido</h1>
-    <p align="center">Esta aplicación te será de utilidad para encriptar/desencriptar tus resultados, basada en el método de Cifrado Cesar, sólo tienes que colocar el número de desplazamientos que deseas que se mueva cada letra, colocar el mensaje y ya tendrás la codificación lista. Tu privacidad es importante para CasanovaLabs</p>
+    <p>Esta aplicación te será de utilidad para encriptar/desencriptar tus resultados, basada en el método de Cifrado Cesar, sólo tienes que colocar el número de desplazamientos que deseas que se mueva cada letra, colocar el mensaje y ya tendrás la codificación lista. Tu privacidad es importante para CasanovaLabs</p>
 
   </div>
-  <div id="secondscreen">
+  <div id="second_screen">
     <h1>Cifrar o descifra tu mensaje</h1>
     <i>N° de desplazamientos</i><br>
-    <input type="number" name="off" id="desplazamiento" min="1" max="50" required>
+    <input type="number" name="off" id="off_set" required>
   </div><br>
   <div id="ciph_deciph">
     <textarea name="msj" id="mssj" autocomplete="off" placeholder="Escribe tu mensaje a cifrar/descifrar"></textarea><br>
     <button type="button" id="ciph" class="btn btn-primary"> Cifrar </button>
     <button type="button" id="deciph" class="btn btn-primary"> Descifrar </button>
   </div><br>
-  <div id="resultaos">
+  <div id="final_text">
     <textarea id="result">Tu resultado es: </textarea><br>
-    <button type="button" id="borrar" class="btn btn-primary"> Limpiar </button>
-  </div>
+    <button type="button"  id= "erased" class="btn btn-primary">Limpiar</button>
+    </div>
+    
 </section>
-<footer> Copyright © CasanovaLabs 2019 - Designed By Ang Bet.
+<footer> 
+  <i>Copyright © CasanovaLabs 2019 - Designed By Ang Bet.</i>
+  <b> Contáctame: </b>
+  <a href="https://www.facebook.com/southsidesnook" target="_blank" class="icon-facebook">Facebook</a>
+  <a href="https://twitter.com/southsidesnook" target="_blank" class="icon-twitter">Twitter</a>
+  <a href="mailto:betangelii@gmail.com" class="icon-mail"> Mail </a>
   </footer>
   <script src="index.js"></script>
   <script src="cipher.js"></script>

@@ -5,26 +5,34 @@ head{
 img{
   opacity: 0.5;
   filter: alpha(opacity=50);
+  height: 187;
+  width: 505;
 }
 body{
-    background-image: url('./casa.jpeg');
-  }
-
-#todo{
-  font-family: 'Cuprum', sans-serif;
+  text-align: center;
+  font-family: 'Cuprum', sans-serif;  
   font-size: x-large;
+  background-image: url('./img/casa.jpeg');
+  }
+header{
+  text-align: center;
+}
 
+#all_divs{
+  text-align: center;
+  font-size: x-large;
+  font-family: 'Cuprum', sans-serif;  
 }
 
 #offSet{
-  font-family: 'Cuprum', sans-serif;
+
   background: transparent;
   border: 2px solid slateblue;
 	border-radius: 10px;
 
 }
 #mssj{
-  font-family: 'Cuprum', sans-serif;
+
   height: 10em;
   width: 500px;
   border: 2px solid slateblue;
@@ -32,10 +40,13 @@ body{
   background: transparent;
 }
 #result{
-  font-family: 'Cuprum', sans-serif;
+
   height: 10em;
    width: 500px;
    border: 2px solid slateblue;
 	border-radius: 10px;
    background: transparent;
+}
+footer{
+  text-align: center;
 }
